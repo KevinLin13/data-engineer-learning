@@ -2,17 +2,18 @@
 
 ## Overall
 
-- Total Questions: 60
-- Correct: 53
-- Accuracy: 88.3%
-- Total Sessions: 1
+- Total Questions: 140
+- Correct: 125
+- Accuracy: 89.3%
+- Total Sessions: 2
 - Current Streak: 1 day
 - Best Streak: 1 day
 - Last Session: 2026-09-03
 - Current Phase: Foundation
 
-> Session counting convention: one dated file represents one complete learning session. The
-> 2026-09-03 session contains three 20-question rounds.
+> Session counting convention: one practice block is one learning session. Multiple same-day
+> blocks are recorded in the same dated file. The 2026-09-03 file contains a morning block
+> (3 rounds) and an afternoon block (4 rounds).
 
 > The source result records round-level totals and conceptual mistakes, but not a per-question
 > topic mapping. Topic-level `Questions` and `Accuracy` therefore remain `—` until that detail
@@ -44,7 +45,7 @@ Mastery should not be based on raw accuracy alone. Consider recency, difficulty,
 | SQL | Grain | 2.75 | — | — | 2026-09-03 | High |
 | SQL | Subquery / EXISTS | 3.0 | — | — | 2026-09-03 | Medium |
 | SQL | CTE | 1.5 | 0 | - | - | Medium |
-| SQL | Window Functions | 0.5 | 0 | - | - | High |
+| SQL | Window Functions | 1.5 | — | — | 2026-09-03 | High |
 | SQL | Query Debugging | 1.5 | 0 | - | - | High |
 | Python | Core Syntax / Data Structures | 2.0 | — | — | 2026-09-03 | Medium |
 | Python | Functions / Parameters | 2.5 | — | — | 2026-09-03 | High |
@@ -55,12 +56,12 @@ Mastery should not be based on raw accuracy alone. Consider recency, difficulty,
 | Database | PostgreSQL Basics | 2.5 | — | — | 2026-09-03 | High |
 | Database | Constraints | 3.0 | — | — | 2026-09-03 | High |
 | Database | Primary / Foreign / Business Keys | 3.0 | — | — | 2026-09-03 | High |
-| Database | Indexes | 0.5 | 0 | - | - | High |
-| Database | Transactions / ACID | 0.5 | 0 | - | - | High |
-| Database | Normalization | 1.0 | 0 | - | - | Medium |
+| Database | Indexes | 1.5 | — | — | 2026-09-03 | High |
+| Database | Transactions / ACID | 2.0 | — | — | 2026-09-03 | High |
+| Database | Normalization | 2.0 | — | — | 2026-09-03 | Medium |
 | Data Engineering | ETL / ELT | 3.0 | — | — | 2026-09-03 | High |
 | Data Engineering | Batch Pipelines | 2.0 | 0 | - | - | High |
-| Data Engineering | Incremental Load | 0.5 | 0 | - | - | High |
+| Data Engineering | Incremental Load | 2.0 | — | — | 2026-09-03 | High |
 | Data Engineering | Idempotency | 2.5 | — | — | 2026-09-03 | High |
 | Data Engineering | Data Quality | 3.0 | — | — | 2026-09-03 | High |
 | Data Engineering | Profiling vs Validation | 3.0 | — | — | 2026-09-03 | Medium |
@@ -112,12 +113,14 @@ Weights should be adjusted automatically according to weak topics, recency, and 
 
 ## Weak Topics
 
+- **Window Functions** — `PARTITION BY` was missed in Round 2 and again in Rounds 3 and 4;
+  continue testing the difference between a calculation partition and output grain.
 - **Grain** — improved after targeted practice, but still needs deliberate tracking through
   `JOIN`, `GROUP BY`, and `DISTINCT`.
 - **Snapshot Diff** — reinforce the direction of `Inserted`, `Changed`, and `Disappeared`,
   especially `A 有、B 無 = Disappeared`.
 - **Python data-structure semantics** — distinguish mutable default arguments, a missing key,
-  and a key whose value is `None`.
+  and a key whose value is `None`; `dict.get()` was missed again in the afternoon block.
 - **GROUP BY / Aggregation** — continue checking the output grain after aggregation.
 
 ## Strong Topics
@@ -130,19 +133,25 @@ Weights should be adjusted automatically according to weak topics, recency, and 
 - Business Key / Surrogate Key and Idempotency
 - REST API Pagination
 - Python keyword-only arguments
+- ACID properties and normalization anomalies after targeted review
+- Composite index equality / range and left-prefix basics
 
 ## Next Session
 
-Goal: establish a measurable baseline across core Data Engineering foundations.
+Goal: stabilize Window Functions and extend incremental-load reasoning beyond basic recognition.
 
 Suggested focus:
-- SQL Grain with mixed `JOIN` / `GROUP BY` / `DISTINCT` cases
-- Snapshot Diff state classification
-- Python mutable default arguments and `dict.get()` vs key existence
-- One small code-review or micro-practical task to validate transfer beyond recognition
+- Window Functions: `PARTITION BY`, `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, Top-N per group,
+  running totals, and `LAG()` / `LEAD()`
+- Incremental Load: deletes, CDC, watermark advancement and recovery, retries, and backfills
+- PostgreSQL Indexes: `EXPLAIN`, `EXPLAIN ANALYZE`, selectivity, and planner behavior
+- Short SQL Grain / Fanout and Python `dict.get()` review
+- One micro-practical or code-review task to validate transfer beyond recognition
 
 ## Session History
 
-| Date | Questions | Correct | Accuracy | Notes |
+| Date / Block | Questions | Correct | Accuracy | Notes |
 |---|---:|---:|---:|---|
-| 2026-09-03 | 60 | 53 | 88.3% | 3 rounds; Grain improved but remains a priority |
+| 2026-09-03 AM | 60 | 53 | 88.3% | 3 rounds; Grain improved but remains a priority |
+| 2026-09-03 PM | 80 | 72 | 90.0% | 4 rounds; Window Functions improved, but `PARTITION BY` remains unstable |
+| **Total** | **140** | **125** | **89.3%** | **2 practice blocks across 1 calendar day** |
