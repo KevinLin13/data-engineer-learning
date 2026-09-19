@@ -2,13 +2,13 @@
 
 ## Overall
 
-- Total Questions: 286
-- Correct: 262
-- Accuracy: 91.6%
-- Total Sessions: 6
-- Current Streak: 1 day
+- Total Questions: 306
+- Correct: 282
+- Accuracy: 92.2%
+- Total Sessions: 7
+- Current Streak: 2 days
 - Best Streak: 4 days
-- Last Session: 2026-09-18
+- Last Session: 2026-09-19
 - Current Phase: Foundation
 
 > Session counting convention: one practice block is one learning session. Multiple same-day
@@ -16,7 +16,7 @@
 > (3 rounds) and an afternoon block (4 rounds); the 2026-09-04 file contains one afternoon
 > block with two completed rounds and one partial round; the 2026-09-05 file contains one
 > completed round; the 2026-09-06 file contains one block with three completed rounds; the
-> 2026-09-18 file contains one completed round.
+> 2026-09-18 file contains one completed round; the 2026-09-19 file contains one completed round.
 
 > Earlier source result records do not always contain a per-question topic mapping. Lifetime
 > topic-level `Questions` and `Accuracy` therefore remain `—` where historical totals cannot
@@ -44,15 +44,15 @@ Mastery should not be based on raw accuracy alone. Consider recency, difficulty,
 | SQL | SELECT / WHERE / ORDER BY | 2.0 | — | — | 2026-09-03 | Medium |
 | SQL | NULL / Three-valued Logic | 3.0 | — | — | 2026-09-03 | High |
 | SQL | GROUP BY / Aggregation | 2.5 | — | — | 2026-09-18 | High |
-| SQL | JOIN / Fanout | 3.0 | — | — | 2026-09-18 | High |
-| SQL | Grain | 3.0 | — | — | 2026-09-18 | High |
+| SQL | JOIN / Fanout | 3.25 | — | — | 2026-09-19 | Medium |
+| SQL | Grain | 3.25 | — | — | 2026-09-19 | Medium |
 | SQL | Subquery / EXISTS | 3.0 | — | — | 2026-09-18 | Medium |
-| SQL | CTE | 1.5 | 0 | - | - | Medium |
-| SQL | Window Functions | 3.0 | — | — | 2026-09-18 | High |
+| SQL | CTE | 1.5 | 0 | - | - | High |
+| SQL | Window Functions | 3.25 | — | — | 2026-09-19 | Medium |
 | SQL | Query Debugging | 1.5 | 0 | - | - | High |
 | Python | Core Syntax / Data Structures | 2.25 | — | — | 2026-09-06 | Medium |
 | Python | Functions / Parameters | 2.75 | — | — | 2026-09-06 | Medium |
-| Python | Exceptions / Error Handling | 1.5 | — | — | 2026-09-18 | Medium |
+| Python | Exceptions / Error Handling | 1.75 | — | — | 2026-09-19 | Medium |
 | Python | File / JSON Processing | 2.0 | — | — | 2026-09-18 | Medium |
 | Python | Type Hints | 1.5 | 0 | - | - | Low |
 | Python | Testing / pytest | 1.5 | — | — | 2026-09-18 | Medium |
@@ -60,29 +60,29 @@ Mastery should not be based on raw accuracy alone. Consider recency, difficulty,
 | Database | Constraints | 3.0 | — | — | 2026-09-03 | High |
 | Database | Primary / Foreign / Business Keys | 3.0 | — | — | 2026-09-06 | High |
 | Database | Indexes | 2.5 | — | — | 2026-09-06 | Medium |
-| Database | Transactions / ACID | 2.0 | — | — | 2026-09-04 | High |
+| Database | Transactions / ACID | 2.25 | — | — | 2026-09-19 | Medium |
 | Database | Normalization | 2.0 | — | — | 2026-09-03 | Medium |
 | Data Engineering | ETL / ELT | 3.0 | — | — | 2026-09-03 | High |
 | Data Engineering | Batch Pipelines | 2.0 | 0 | - | - | High |
-| Data Engineering | Incremental Load | 3.5 | — | — | 2026-09-18 | High |
-| Data Engineering | Idempotency | 3.0 | — | — | 2026-09-06 | High |
+| Data Engineering | Incremental Load | 3.75 | — | — | 2026-09-19 | Medium |
+| Data Engineering | Idempotency | 3.0 | — | — | 2026-09-19 | High |
 | Data Engineering | CDC | 2.0 | — | — | 2026-09-06 | Medium |
 | Data Engineering | Backfill | 2.0 | — | — | 2026-09-06 | Medium |
 | Data Engineering | Data Quality | 3.0 | — | — | 2026-09-18 | High |
 | Data Engineering | Profiling vs Validation | 3.0 | — | — | 2026-09-06 | Medium |
-| Data Engineering | Snapshot Diff | 3.0 | — | — | 2026-09-18 | Medium |
-| Data Engineering | Schema Evolution / Migration | 2.25 | — | — | 2026-09-18 | High |
-| Data Engineering | Data Modeling | 2.25 | — | — | 2026-09-18 | High |
-| Data Engineering | Observability / Monitoring | 0.5 | 0 | - | - | Medium |
+| Data Engineering | Snapshot Diff | 3.25 | — | — | 2026-09-19 | Low |
+| Data Engineering | Schema Evolution / Migration | 2.5 | — | — | 2026-09-19 | Medium |
+| Data Engineering | Data Modeling | 2.75 | — | — | 2026-09-19 | High |
+| Data Engineering | Observability / Monitoring | 0.5 | 0 | - | - | High |
 | API / Ingestion | REST APIs | 2.5 | — | — | 2026-09-03 | Medium |
 | API / Ingestion | Pagination | 2.5 | — | — | 2026-09-03 | Medium |
-| API / Ingestion | Retries / Rate Limits | 0.5 | 0 | - | - | Medium |
-| Git | Git Fundamentals | 1.5 | 0 | - | - | Medium |
+| API / Ingestion | Retries / Rate Limits | 0.5 | 0 | - | - | High |
+| Git | Git Fundamentals | 1.5 | 0 | - | - | High |
 | Git | Branch / PR Workflow | 1.5 | — | — | 2026-09-06 | Medium |
-| CI/CD | GitHub Actions | 2.0 | — | — | 2026-09-18 | High |
-| Architecture | Bronze / Silver / Gold | 2.5 | — | — | 2026-09-18 | High |
-| Architecture | Warehouse vs Lake vs Lakehouse | 0.5 | 0 | - | - | Medium |
-| Orchestration | DAG / Scheduling / Dependencies | 0.0 | 0 | - | - | Medium |
+| CI/CD | GitHub Actions | 2.5 | — | — | 2026-09-19 | Medium |
+| Architecture | Bronze / Silver / Gold | 2.75 | — | — | 2026-09-19 | Medium |
+| Architecture | Warehouse vs Lake vs Lakehouse | 0.5 | 0 | - | - | High |
+| Orchestration | DAG / Scheduling / Dependencies | 0.0 | 0 | - | - | High |
 | Distributed Data | Spark / PySpark | 0.0 | 0 | - | - | Medium |
 | Infrastructure | Docker Basics | 0.0 | 0 | - | - | Low |
 | Cloud | Cloud Data Fundamentals | 0.0 | 0 | - | - | Low |
@@ -118,21 +118,16 @@ Weights should be adjusted automatically according to weak topics, recency, and 
 
 ## Weak Topics
 
-- **Schema Evolution / Migration** — additive and breaking changes were identified correctly, but
-  actual migration implementation, compatibility handling, and rollback strategy remain untested.
-- **GitHub Actions / CI implementation** — push/PR triggers, pytest execution, and failure status are
-  understood conceptually; YAML authoring and workflow debugging remain unassessed.
-- **Bronze / Silver / Gold architecture** — layer responsibilities are recognized correctly, but an
-  end-to-end architecture-design micro-practical is still needed.
-- **Data Modeling** — grain, multi-stage aggregation, JOIN fanout, and existence filtering were strong;
-  continue schema design and dimensional-modeling scenarios before raising mastery further.
-- **Incremental Load advanced edge cases** — composite checkpoints, lookback, transaction boundaries,
-  and replay safety were strong; continue difficult recovery and late-arrival scenarios at lower weight.
-- **Window Frame / Peer Rows** — delayed-review variants passed on 2026-09-06, but the same
-  peer-aware default-frame question was answered incorrectly again on 2026-09-18. Raise this
-  to the highest short-term review priority; continue `ROWS`, `RANGE`, ties, and deterministic ordering.
-- **Snapshot Diff** — `Inserted`, `Disappeared`, `Changed`, `Duplicate`, and technical-metadata handling
-  passed delayed review. Retain low-frequency review for long-term retention.
+- **SQL Query Debugging / CTE** — still unassessed in the tracker and should become a primary next-step area.
+- **Observability / Monitoring** — essentially unassessed; introduce metrics, logs, alerts, SLIs/SLO-style reasoning, and pipeline-failure scenarios.
+- **API Retries / Rate Limits** — unassessed; practice retryable errors, backoff, jitter, rate-limit handling, and idempotent ingestion.
+- **Warehouse vs Lake vs Lakehouse** — unassessed; build architectural trade-off reasoning rather than definition-only recognition.
+- **DAG / Scheduling / Dependencies** — not started; introduce dependency ordering, retries, scheduling, backfills, and failure propagation.
+- **Git Fundamentals** — tracker still has no direct assessment; practice working tree / staging / commit / branch reasoning.
+- **Schema Evolution / Migration** — rollout order, breaking-change detection, and transaction rollback were correct on 2026-09-19, but real migration implementation and backward-compatibility handling still need practice.
+- **GitHub Actions / CI implementation** — workflow structure and dependency-debugging questions passed on 2026-09-19; retain implementation-oriented YAML debugging rather than basic definition questions.
+- **Data Modeling** — grain, fanout, Fact vs Dimension, and order-item fact grain were strong; continue schema-design and dimensional-modeling micro-practicals before raising mastery further.
+- **Bronze / Silver / Gold architecture** — layer responsibilities and Bronze replayability are stable, but an end-to-end architecture-design micro-practical is still needed.
 
 ## Strong Topics
 
@@ -141,6 +136,7 @@ Weights should be adjusted automatically according to weak topics, recency, and 
 - JOIN Fanout, Anti-Join patterns, and grain preservation with `EXISTS`
 - Grain reasoning and multi-stage aggregation
 - Window Function grain, ranking functions, `LAG()` / `LEAD()`, and `PARTITION BY`
+- Window Frame / Peer Rows: default peer-aware behavior, `ROWS` vs `RANGE`, ties, deterministic ordering, and partitioned running totals passed multi-variant review on 2026-09-19; retain low-frequency delayed review because this concept previously recurred
 - PostgreSQL keys, constraints, and `ON CONFLICT`
 - ETL / Canonicalization and Data Quality
 - Business Key / Surrogate Key and Idempotency
@@ -148,30 +144,30 @@ Weights should be adjusted automatically according to weak topics, recency, and 
 - Python keyword-only arguments
 - Python mutable default arguments and `dict.get()` versus key existence after repeated delayed re-test
 - Backfill basics and idempotent overlap handling
-- Incremental Load failure-order reasoning, composite checkpoints, lookback windows, and replay-safe writes
+- Incremental Load failure-order reasoning, composite checkpoints, lookback windows, late-arriving data, and replay-safe writes
 - CDC, hard delete, soft delete, tombstone, and delete-event basics
 - Snapshot Diff classifications and business-fields-versus-technical-metadata comparisons
 - PostgreSQL selectivity, cardinality estimates, `EXPLAIN ANALYZE`, and `ANALYZE`
-- ACID properties and normalization anomalies after targeted review
+- ACID properties, transaction rollback basics, and normalization anomalies after targeted review
 - Composite indexes, equality / range, index-assisted ordering, `EXPLAIN`, and planner estimates
 - Profiling findings versus rule-backed validation failures
 
 ## Next Session
-Goal: repair Window Frame / Peer Rows while shifting toward implementation-oriented reasoning and retaining
-delayed review of Snapshot Diff.
+
+Goal: shift away from already stable recognition topics toward unassessed and implementation-oriented areas, while retaining a small delayed-review sample for Window Frame / Peer Rows.
 
 Suggested focus:
-- 20% Window Frame / Peer Rows targeted review
-- 20% Schema Evolution / Migration implementation
-- 15% GitHub Actions YAML / CI debugging
-- 15% Data Modeling / Dimensional Modeling
-- 10% Bronze / Silver / Gold architecture design
-- 10% Python / pytest code review
-- 5% Incremental Load delayed review
-- 5% Snapshot Diff delayed review
+- 20% SQL Query Debugging / CTE
+- 15% Observability / Monitoring
+- 10% API Retries / Rate Limits
+- 10% Warehouse vs Lake vs Lakehouse
+- 10% DAG / Scheduling / Dependencies
+- 10% Git Fundamentals
+- 10% GitHub Actions workflow debugging
+- 10% Data Modeling practical design
+- 5% Window Frame / Peer Rows delayed review
 
-Increase the proportion of AI code review, scenario reasoning, bug diagnosis, and micro-practical tasks;
-reduce pure definition-recognition questions.
+Increase the proportion of AI code review, scenario reasoning, bug diagnosis, and micro-practical tasks; reduce pure definition-recognition questions.
 
 ## Session History
 
@@ -183,4 +179,5 @@ reduce pure definition-recognition questions.
 | 2026-09-05 | 20 | 18 | 90.0% | 1 round; Backfill and failure recovery were strong, while Window Frame / Peer Rows and Snapshot Diff `Changed` remain review priorities |
 | 2026-09-06 | 60 | 60 | 100.0% | 3 rounds; delayed review passed for Window Frame and Snapshot Diff; advanced incremental load and newly assessed architecture/CI/modeling topics were strong |
 | 2026-09-18 | 20 | 19 | 95.0% | 1 round; schema migration, CI, layered architecture, grain/fanout, and Python topics were stable; Window Frame / Peer Rows recurred |
-| **Total** | **286** | **262** | **91.6%** | **6 practice blocks across 5 calendar days** |
+| 2026-09-19 | 20 | 20 | 100.0% | 1 round; Window Frame / Peer Rows passed multiple variants including `ROWS`, `RANGE`, ties, deterministic ordering, and full debugging; no new conceptual mistakes |
+| **Total** | **306** | **282** | **92.2%** | **7 practice blocks across 6 calendar days** |

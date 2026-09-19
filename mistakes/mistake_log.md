@@ -24,7 +24,12 @@ Record conceptual mistakes rather than every wrong option.
 | 2026-09-04 | 2026-09-04-R2 | Database | Index Selectivity | Does having an index guarantee that PostgreSQL will use an Index Scan? | — | — | Treated index presence as sufficient regardless of how many rows the predicate returns. | The planner compares costs; highly selective predicates are more likely to use an index, while low-selectivity queries may reasonably use a Seq Scan. | 0 | Improved |
 | 2026-09-04 | 2026-09-04-R3 | Data Engineering | Watermark Replay After Target Write | What happens if the target write succeeds but the watermark update fails? | — | — | Expected the watermark to advance automatically after the target write. | The watermark remains old, so the next run may replay the batch; idempotent business-key UPSERTs make that replay safe. | 2 | Improved |
 | 2026-09-05 | 2026-09-05-R1 | Data Engineering | Snapshot Diff: Changed vs Duplicate | How should a key present in both snapshots with different values be classified? | Duplicate | Changed | Treated a changed record as a duplicate because the business key was the same. | Both snapshots contain the key but compared values differ: `Changed`; `Duplicate` means the same key or row appears more than once within a dataset. | 1 | Improved |
-| 2026-09-05 | 2026-09-05-R1 | SQL | Window Frame / Peer Rows | What result can `SUM(amount) OVER (ORDER BY order_date)` produce when dates tie? | 100, 300, 350 | 300, 300, 350 | Applied a strict row-by-row running-total model despite tied `ORDER BY` values forming peer rows. | PostgreSQL's default peer-aware frame can give peers the same cumulative result; use deterministic ordering plus an explicit `ROWS` frame for strict row-by-row accumulation. | 3 | Partial |
+| 2026-09-05 | 2026-09-05-R1 | SQL | Window Frame / Peer Rows | What result can `SUM(amount) OVER (ORDER BY order_date)` produce when dates tie? | 100, 300, 350 | 300, 300, 350 | Applied a strict row-by-row running-total model despite tied `ORDER BY` values forming peer rows. | PostgreSQL's default peer-aware frame can give peers the same cumulative result; use deterministic ordering plus an explicit `ROWS` frame for strict row-by-row accumulation. | 4 | Improved |
+
+## Review Updates
+
+- **2026-09-19 — Window Frame / Peer Rows:** passed targeted review across default peer-aware behavior, explicit `ROWS`, `RANGE`, ties, deterministic ordering, `PARTITION BY`, and a full debugging scenario. No new conceptual mistake was recorded. Keep only low-frequency delayed review because the misconception previously recurred after an earlier successful review.
+- **2026-09-19 — Snapshot Diff:** correctly classified `Inserted`, `Disappeared`, and `Changed` again; retain low-frequency review only.
 
 ## Rules
 
